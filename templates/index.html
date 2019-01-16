@@ -1,0 +1,48 @@
+{% extends "base_copy.html" %}
+{% block body_block %}
+    <h1 class="my-n5 py-5">여기는 인덱스 페이지입니다.</h1> 
+    <!-- class="p-0","m-0" 등등 padding, margin 을 나타냄
+                pt, pr, pl, pb : 위 오른쪽 왼쪽 아래
+                px, py : x축, y축
+                0,1,2,3,4,5 -> 0px, 4px, 8px,16px,24px,48px
+                음수도 가능(n 추가)
+                숫자는 em을 나타냄 --> 
+    <h1 class="mx-auto" style="width:200px;">이건 어디로 갈까?</h1> 
+    <h1 class="bg-primary">background-color</h1>
+    <h1 class="text-danger">위험text</h1>
+    <h1 class="alert-danger d-sm-none">위험alert</h1>
+    <h1 type="button" class="btn-danger">위험btn</h1>
+    <h1>Example heading <span class="badge badge-secondary d-block">New</span></h1>
+    <h1 class="border py-4" style="width:200px;">border</h1>
+    <h1 class="border border-danger d-none">빨간 테두리</h1>
+    <h1 class="border rounded-circle mx-auto d-inline" style="width:150px;">둥글게</h1>
+    <h1 class="border rounded-pill mx-auto d-inline" style="width:100px;">알약?</h1>
+    
+    <div class="bg-danger m-3 position-relative" style="width:100px;height:100px;">
+        <div class="bg-primary m-3 position-relative" style="width:100px;height:100px;top:50px;"></div> 
+    </div> 
+    <br>
+    <br>
+    
+    <p class="test-center">가운데?</p>
+    
+    
+    
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">Left</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-secondary">Right</button>
+    </div>
+    
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown button
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+    
+{% endblock%}
